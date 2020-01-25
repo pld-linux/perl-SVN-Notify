@@ -4,7 +4,6 @@
 
 %define		pdir	SVN
 %define		pnam	Notify
-%include	/usr/lib/rpm/macros.perl
 Summary:	SVN::Notify - Subversion activity notification
 Name:		perl-SVN-Notify
 Version:	2.83
