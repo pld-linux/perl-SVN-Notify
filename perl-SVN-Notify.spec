@@ -6,20 +6,21 @@
 %define		pnam	Notify
 Summary:	SVN::Notify - Subversion activity notification
 Name:		perl-SVN-Notify
-Version:	2.83
-Release:	2
+Version:	2.87
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/D/DW/DWHEELER/SVN-Notify-%{version}.tar.gz
-# Source0-md5:	5430a8b268e91c90b74fa3684c899b13
+Source0:	http://www.cpan.org/modules/by-authors/id/M/MP/MPGHF/SVN-Notify-%{version}.tar.gz
+# Source0-md5:	58d37ab99fc6bb980d174484cb565139
 URL:		http://search.cpan.org/dist/SVN-Notify/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Test-Pod >= 1.41
+BuildRequires:	perl-Email-Address-XS >= 1.03
 %endif
+Requires:	perl-Email-Address-XS >= 1.03
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
